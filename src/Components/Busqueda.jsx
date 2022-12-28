@@ -11,7 +11,7 @@ const Busqueda = ({lstColaboradores,setLstFiltrada}) => {
     return (
             <Navbar expand="lg" variant="dark" bg="dark">
                 <Container fluid>
-                    <Navbar.Brand href="#">Buscador de Colaboradores</Navbar.Brand>
+                    <Navbar.Brand  href="#">Buscador de Colaboradores</Navbar.Brand>
                     <Navbar.Toggle aria-controls='navbarScroll'/>
                     <Nav
                     className='me-auto my-2 my-lg-0'

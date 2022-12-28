@@ -10,11 +10,12 @@ const Formulario = ({ lstColaboradores, setLstColaboradores,setLstFiltrada }) =>
         e.preventDefault(); // Evitar recarga de pagina , detener ejecucion submit
         setLstColaboradores([...lstColaboradores, { nombre: nombre, correo: email }]);// ... actualizar lista, agrega nuevos datos
         setLstFiltrada([...lstColaboradores, { nombre: nombre, correo: email }]);
+        alert('Colaborador Agregado');
      
 
     }
     return (
-        <div className='p-2'>
+        <div className='p-2' style={{background:'black',color:'white'}}>
             <h5>Nombre</h5>
             <Form  onSubmit={agregarColaborador}>
             <><Form.Control  size="sm" id='nombre' name='nombreColaborador' type="text" placeholder="Nombre Colaborador" 
